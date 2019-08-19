@@ -11,6 +11,11 @@
   font-family: "BenchNine", sans-serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   font-family: "Amatic SC", cursive;
