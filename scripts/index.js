@@ -47,13 +47,31 @@ $aboutSection.waypoint(
   }
 );
 
-$educationSection.waypoint(function(direction) {
-  $educationSection.addClass("show");
-  if (screen.width > 500) {
-    updateActiveLink(1, false);
-    updateActiveLink(2, true);
+$educationSection.waypoint(
+  function(direction) {
+    $educationSection.addClass("show");
+    if (screen.width > 500 && direction === "down") {
+      updateActiveLink(1, false);
+      updateActiveLink(2, true);
+    }
+  },
+  {
+    offset: "25%"
   }
-});
+);
+
+$educationSection.waypoint(
+  function(direction) {
+    $educationSection.addClass("show");
+    if (screen.width > 500 && direction === "up") {
+      updateActiveLink(1, false);
+      updateActiveLink(2, true);
+    }
+  },
+  {
+    offset: "-25%"
+  }
+);
 
 updateActiveLink = (index, isAdded) => {
   if (isAdded) $(`.nav-list ul li:nth-child(${index}) a`).addClass("active");
