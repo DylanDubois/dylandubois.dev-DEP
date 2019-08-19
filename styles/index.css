@@ -205,7 +205,7 @@ body {
   .header h1 {
     align-self: center !important;
     position: absolute;
-    bottom: 10%;
+    bottom: 2%;
   }
 
   .links-container {
