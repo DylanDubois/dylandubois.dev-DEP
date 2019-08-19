@@ -123,12 +123,6 @@ body {
   justify-self: flex-start;
 }
 
-.about,
-.education {
-  opacity: 0;
-  transition: all 1s ease-in;
-}
-
 .profile-img {
   background-image: url("../assets/images/profile-image.png");
   background-size: cover;

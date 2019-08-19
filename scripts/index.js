@@ -36,7 +36,6 @@ $aboutSection.waypoint(
 
 $aboutSection.waypoint(
   function(direction) {
-    $aboutSection.addClass("show");
     if (screen.width > 500 && direction === "up") {
       updateActiveLink(1, true);
       updateActiveLink(2, false);
@@ -49,7 +48,6 @@ $aboutSection.waypoint(
 
 $educationSection.waypoint(
   function(direction) {
-    $educationSection.addClass("show");
     if (screen.width > 500 && direction === "down") {
       updateActiveLink(1, false);
       updateActiveLink(2, true);

@@ -17,10 +17,23 @@
       href="https://fonts.googleapis.com/css?family=BenchNine&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  <body
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+  >
     <header class="content header">
-      <div class="links-container">
+      <div
+        class="links-container"
+        data-aos="flip-up"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
         <div class="floating-link" id="about-link">
           <a href="#about">About</a>
         </div>
@@ -37,11 +50,20 @@
           <a href="#contact">Contact</a>
         </div>
       </div>
-      <h1>Hi, I'm <span>Dylan</span>.</h1>
+      <h1 data-aos="zoom-in-up" data-aos-delay="1000">
+        Hi, I'm <span>Dylan</span>.
+      </h1>
     </header>
     <section class="content about" id="about">
-      <h1>Who am <span>I</span>?</h1>
-      <div class="container">
+      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+        Who am <span>I</span>?
+      </h1>
+      <div
+        class="container"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
         <div class="profile-img"></div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -59,7 +81,7 @@
       <h1>How do <span>I</span> Learn?</h1>
     </section>
 
-    <nav class="nav-list">
+    <nav class="nav-list" data-aos="fade-left" data-aos-duration="1000">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -68,12 +90,16 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.4.1.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="scripts/index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
