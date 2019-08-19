@@ -21,25 +21,19 @@ $headerSection.waypoint(
   }
 );
 
-$aboutSection.waypoint(
-  function(direction) {
-    $aboutSection.addClass("show");
-    if (screen.width > 500) {
-      updateActiveLink(1, true);
-      updateActiveLink(2, false);
-    }
-  },
-  {
-    offset: "20%"
+$aboutSection.waypoint(function(direction) {
+  $aboutSection.addClass("show");
+  if (screen.width > 500) {
+    updateActiveLink(1, true);
+    updateActiveLink(2, false);
   }
-);
+});
 
 $educationSection.waypoint(function(direction) {
   $educationSection.addClass("show");
   if (screen.width > 500) {
     updateActiveLink(1, false);
     updateActiveLink(2, true);
-    console.log("left education");
   }
 });
 
