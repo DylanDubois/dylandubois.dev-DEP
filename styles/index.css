@@ -100,6 +100,24 @@ body {
   background-position: center;
 }
 
+.education {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(48, 48, 48, 1),
+      rgba(48, 48, 48, 0.7),
+      rgba(48, 48, 48, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(48, 48, 48, 0.4),
+      rgba(48, 48, 48, 0.5),
+      rgba(48, 48, 48, 0.4)
+    ),
+    url("https://avante.biz/wp-content/uploads/Lsu-Wallpaper/Lsu-Wallpaper-035.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .header h1 {
   align-self: flex-end;
   justify-self: flex-start;
