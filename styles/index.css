@@ -193,7 +193,7 @@ body {
   .container {
     flex-direction: column;
     justify-content: center;
-    margin: 0;
+    margin: 2rem 0;
   }
 
   .header {
