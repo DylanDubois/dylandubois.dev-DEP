@@ -24,13 +24,26 @@ $headerSection.waypoint(
 $aboutSection.waypoint(
   function(direction) {
     $aboutSection.addClass("show");
-    if (screen.width > 500) {
+    if (screen.width > 500 && direction === "down") {
       updateActiveLink(1, true);
       updateActiveLink(2, false);
     }
   },
   {
-    offset: "10%"
+    offset: "25%"
+  }
+);
+
+$aboutSection.waypoint(
+  function(direction) {
+    $aboutSection.addClass("show");
+    if (screen.width > 500 && direction === "up") {
+      updateActiveLink(1, true);
+      updateActiveLink(2, false);
+    }
+  },
+  {
+    offset: "-25%"
   }
 );
 
