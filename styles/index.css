@@ -47,7 +47,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-right: 6rem;
+  margin-right: 7rem;
 }
 
 .nav-list {
@@ -150,6 +150,7 @@ body {
   flex-wrap: wrap;
   /* max-width: calc(100% - 10rem); */
   justify-content: center;
+  text-align: center;
 }
 
 .floating-link {
