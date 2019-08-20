@@ -1,3 +1,17 @@
 .width-half {
   width: 50%;
 }
+
+.column {
+  flex-direction: column;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+@media (max-width: 750px) {
+  .align-start {
+    align-items: center;
+  }
+}

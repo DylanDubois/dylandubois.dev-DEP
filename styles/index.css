@@ -140,11 +140,45 @@ body {
   background-position: center;
 }
 
+.experience {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(48, 48, 48, 1),
+      rgba(48, 48, 48, 0.7),
+      rgba(48, 48, 48, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(48, 48, 48, 0.4),
+      rgba(48, 48, 48, 0.5),
+      rgba(48, 48, 48, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1551337676-953e468ec0c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1955&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
 .education-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   flex-basis: 75%;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.experience-container:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .education-lists {
@@ -171,7 +205,21 @@ body {
 }
 
 .lsu-img {
+  min-width: 150px;
+  min-height: 150px;
   background-image: url("https://pbs.twimg.com/profile_images/813919676732469253/oogdfDbS_400x400.jpg");
+}
+
+.redfin-img {
+  min-width: 150px;
+  min-height: 150px;
+  background-image: url("http://press.redfin.com/system/files-encrypted/nasdaq_kms/inline-images/5001-2.jpg");
+}
+
+.ge-digital-img {
+  min-width: 150px;
+  min-height: 150px;
+  background-image: url("https://www.bergeyselectric.com/content/wp-content/uploads/2013/01/ge-logo-black.png");
 }
 
 .show,
@@ -308,8 +356,8 @@ body {
   }
 
   .img {
-    width: 75%;
-    height: 55vw;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 200px;
     margin: 0;
     margin-bottom: 2rem;
@@ -317,5 +365,10 @@ body {
 
   .education-lists {
     flex-direction: column;
+  }
+
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
   }
 }

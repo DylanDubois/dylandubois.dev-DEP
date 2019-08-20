@@ -6,6 +6,7 @@
 const $headerSection = $(".header");
 const $aboutSection = $("#about");
 const $educationSection = $("#education");
+const $experienceSection = $("#experience");
 const $navList = $(".nav-list");
 
 $headerSection.waypoint(
@@ -60,10 +61,33 @@ $educationSection.waypoint(
 
 $educationSection.waypoint(
   function(direction) {
-    $educationSection.addClass("show");
     if (screen.width > 500 && direction === "up") {
-      updateActiveLink(1, false);
       updateActiveLink(2, true);
+      updateActiveLink(3, false);
+    }
+  },
+  {
+    offset: "-25%"
+  }
+);
+
+$experienceSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "down") {
+      updateActiveLink(2, false);
+      updateActiveLink(3, true);
+    }
+  },
+  {
+    offset: "25%"
+  }
+);
+
+$experienceSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "up") {
+      updateActiveLink(3, true);
+      updateActiveLink(4, false);
     }
   },
   {
