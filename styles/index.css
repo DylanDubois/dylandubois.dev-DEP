@@ -16,8 +16,13 @@ a {
   font-family: "Amatic SC", cursive;
 }
 
-p {
+p,
+li {
   font-size: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h1,
@@ -26,8 +31,26 @@ span {
   font-size: 5rem;
 }
 
+h2 {
+  font-family: "Amatic SC", cursive;
+  color: var(--primary-green);
+  font-size: 3rem;
+}
+
+h3 {
+  font-family: "Amatic SC", cursive;
+  color: var(--primary-green);
+  font-size: 2rem;
+}
+
+p,
+p span {
+  font-size: 1.5rem;
+}
+
 span {
   color: var(--primary-green);
+  font-weight: 700;
 }
 
 body {
@@ -59,7 +82,6 @@ body {
 }
 
 .nav-list ul {
-  list-style-type: none;
   font-size: 1.5rem;
 }
 
@@ -118,19 +140,38 @@ body {
   background-position: center;
 }
 
+.education-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 75%;
+}
+
+.education-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header h1 {
   align-self: flex-end;
   justify-self: flex-start;
 }
 
-.profile-img {
-  background-image: url("../assets/images/profile-image.png");
+.img {
   background-size: cover;
   background-position: center;
-  width: 50%;
-  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 200px;
   margin-right: 2rem;
+}
+
+.profile-img {
+  background-image: url("../assets/images/profile-image.png");
+}
+
+.lsu-img {
+  background-image: url("https://pbs.twimg.com/profile_images/813919676732469253/oogdfDbS_400x400.jpg");
 }
 
 .show,
@@ -218,6 +259,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 2rem 0;
+    text-align: center;
   }
 
   .header {
@@ -265,11 +307,15 @@ body {
     display: none;
   }
 
-  .profile-img {
+  .img {
     width: 75%;
     height: 55vw;
     border-radius: 200px;
     margin: 0;
     margin-bottom: 2rem;
+  }
+
+  .education-lists {
+    flex-direction: column;
   }
 }
