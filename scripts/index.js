@@ -7,6 +7,8 @@ const $headerSection = $(".header");
 const $aboutSection = $("#about");
 const $educationSection = $("#education");
 const $experienceSection = $("#experience");
+const $projectsSection = $("#projects");
+const $contactSection = $("#contact");
 const $navList = $(".nav-list");
 
 $headerSection.waypoint(
@@ -22,6 +24,7 @@ $headerSection.waypoint(
   }
 );
 
+// 1
 $aboutSection.waypoint(
   function(direction) {
     $aboutSection.addClass("show");
@@ -47,6 +50,7 @@ $aboutSection.waypoint(
   }
 );
 
+// 2
 $educationSection.waypoint(
   function(direction) {
     if (screen.width > 500 && direction === "down") {
@@ -71,6 +75,7 @@ $educationSection.waypoint(
   }
 );
 
+// 3
 $experienceSection.waypoint(
   function(direction) {
     if (screen.width > 500 && direction === "down") {
@@ -88,6 +93,56 @@ $experienceSection.waypoint(
     if (screen.width > 500 && direction === "up") {
       updateActiveLink(3, true);
       updateActiveLink(4, false);
+    }
+  },
+  {
+    offset: "-25%"
+  }
+);
+
+// 4
+$projectsSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "down") {
+      updateActiveLink(3, false);
+      updateActiveLink(4, true);
+    }
+  },
+  {
+    offset: "25%"
+  }
+);
+
+$projectsSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "up") {
+      updateActiveLink(4, true);
+      updateActiveLink(5, false);
+    }
+  },
+  {
+    offset: "-25%"
+  }
+);
+
+// 5
+$contactSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "down") {
+      updateActiveLink(4, false);
+      updateActiveLink(5, true);
+    }
+  },
+  {
+    offset: "25%"
+  }
+);
+
+$contactSection.waypoint(
+  function(direction) {
+    if (screen.width > 500 && direction === "up") {
+      updateActiveLink(4, true);
+      updateActiveLink(5, false);
     }
   },
   {
