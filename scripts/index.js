@@ -3,6 +3,14 @@
  * - All our useful JS goes here, awesome!
  */
 
+// const primaryColors = ["#3ff61d", "#59c2fe", "#cc0183"];
+// document.documentElement.style.setProperty(
+//   "--primary",
+//   primaryColors[
+//     Math.floor(Math.random(primaryColors.length - 1) * primaryColors.length)
+//   ]
+// );
+
 const $headerSection = $(".header");
 const $aboutSection = $("#about");
 const $educationSection = $("#education");

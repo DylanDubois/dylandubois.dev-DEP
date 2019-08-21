@@ -1,6 +1,6 @@
 :root {
   --background-dark: #303030;
-  --primary-green: #3ff61d;
+  --primary: #3ff61d;
 }
 
 * {
@@ -37,13 +37,13 @@ span {
 
 h2 {
   font-family: "Amatic SC", cursive;
-  color: var(--primary-green);
+  color: var(--primary);
   font-size: 3rem;
 }
 
 h3 {
   font-family: "Amatic SC", cursive;
-  color: var(--primary-green);
+  color: var(--primary);
   font-size: 2rem;
 }
 
@@ -53,7 +53,7 @@ p span {
 }
 
 span {
-  color: var(--primary-green);
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -211,6 +211,25 @@ body {
   align-items: center;
 }
 
+.contact-links > a > h2:before {
+  content: "";
+  position: absolute;
+  z-index: 9;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary);
+  transition: width 0.4s ease;
+  margin-top: 4rem;
+}
+
+.contact-links > a:hover:first-of-type > h2:before {
+  width: 90px;
+}
+
+.contact-links > a:hover:last-of-type > h2:before {
+  width: 128px;
+}
+
 .education-info {
   display: flex;
   flex-wrap: wrap;
@@ -293,7 +312,7 @@ body {
 }
 
 .active {
-  color: var(--primary-green);
+  color: var(--primary);
 }
 
 .links-container {
@@ -329,7 +348,7 @@ body {
 }
 
 .floating-link:hover {
-  background: var(--primary-green);
+  background: var(--primary);
 }
 
 .floating-link a {
